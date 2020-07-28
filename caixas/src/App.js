@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       {boxList.map((box, index) => {
-        return <Box number={box.number} />;
+        return <Box number={box.number} key={index} />;
       })}
       <button onClick={() => addBox()}>Add Caixa</button>
       <button onClick={() => addOne()}>Add 1</button>
